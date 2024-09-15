@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>exercise-4</title>
+    </head>
+    <body>
+        <h2>
+            Try the following exercises to perfect your knowledge
+        </h2>
+
+        <p>
+            Try calling the function greet() without a parameter (it
+            will display 'Hello undefined!').<br>Modify the function
+            so that if 'name' is undefined, it should display 'Hi there'
+            instead. <strong>Hint: if (!name)</strong>
+        </p>
+
+        <script>
+
+            function greet(name) {
+                if (!name) {
+                    console.log('Hi there!');
+                } else {
+                console.log(`Hello ${name}!`);
+                }
+            }
+
+            // greet(); calling the function without a parameter displays undefined
+            //this code will display 'Hi there' if the function is called without an argument
+
+            greet('Sharon');
+            greet('Dominion');
+
+            greet(); //displays the message 'Hi there' in the console
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>functions</title>
+    </head>
+    <body>
+
+        <button onclick="
+            console.log(functionName());
+        ">Click me to run a function</button>
+
+        <script>
+            
+            function functionName() {
+                let result = 5 + 5;
+                return result;
+            }
+
+            function addTwoNumbers(x, y) {
+                let result = x + y;
+                console.log(result);
+            }
+
+            addTwoNumbers(2, 6);
+
+            function mySavings(salary, savingsPercent) {
+                let result = salary * savingsPercent;
+                console.log(`My savings is $${result}`);
+            }
+
+            mySavings(10000, 0.3);
+            mySavings(5000, 0.1);
+            mySavings(250000, 0.4);
+        </script>
+    </body>
+</html>

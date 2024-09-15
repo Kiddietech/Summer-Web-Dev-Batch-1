@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Rock-paper-scissors Game</title>
+        <style>
+            button {
+                background-color: rgb(55, 2, 244);
+                color: white;
+                padding-top: 10px;
+                padding-left: 10px;
+                padding-bottom: 10px;
+                padding-right: 10px;
+                border-width: 2px;
+                border-color: rgb(13, 255, 0);
+                border-style: solid;
+                border-radius: 20px;
+                cursor: pointer;
+            }
+
+            p {
+                font-size: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <p>Rock Paper Scissors</p>
+        
+        <!-- the buttons when clicked displays a popup and a message in the browser -->
+
+        <button onclick="
+            alert('I picked Rock');
+            console.log('I picked Rock');
+        ">Rocky</button>
+
+        <button onclick="
+            alert('I picked Paper');
+            console.log('I picked Paper');
+        ">Paper</button>
+
+        <button onclick="
+           alert('I picked Scissors'); 
+           console.log('I picked Scissors');
+        ">Scissors</button>
+      
+    </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>object</title>
+    </head>
+    <body>
+        
+        <script>
+            const product = {
+                name: 'shirt',
+                price: 100,
+                delivery_time: '1 day',
+                rating: {
+                    star: 5,
+                    count: '100k'
+                },
+                myFunction: function functionName() {
+                    console.log('i am a method');
+                }
+            };
+
+            console.log(product);
+            console.log(product.name);
+            console.log(product.price);
+            console.log(product.delivery_time);
+
+            product.discount = 0.2;
+            product.amountInStock = 50;
+
+            delete product.amountInStock;
+
+            console.log(product.rating.count);
+
+            product.myFunction();
+
+            console.log(typeof product.myFunction);
+
+        </script>
+    </body>
+</html>

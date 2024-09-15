@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Shipping Calculator</title>
+        <style>
+
+            body {
+                background: linear-gradient(
+                    60deg,
+                    darkgreen,
+                    rgb(9, 161, 9),
+                    rgb(48, 243, 48)
+                );
+
+                background-repeat: no-repeat;
+                color: white;
+                font-size: 20px;
+            }
+
+            .amount-input {
+                background-color: yellow;
+                border: none;
+                padding-left: 8px;
+                padding-top: 4px;
+                padding-bottom: 4px;
+                outline: none;
+                font-size: 18px;
+                width: 130px;
+                border-radius: 8px;
+            }
+
+            .calculate-button {
+                background-color: yellow;
+                border: none;
+                font-size: 18px;
+                padding-left: 8px;
+                padding-top: 4px;
+                padding-bottom: 4px;
+                padding-right: 8px;
+                cursor: pointer;
+                border-radius: 8px;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Jumia Shipping Calculator</h2>
+
+        <p>Orders under <b>N500</b> = +<b>N100</b> Shipping</p>
+
+        <p>Orders over <b>N500</b> = <b>FREE shipping</b></p>
+
+        <label>Enter Amount (NGN): </label>
+
+        <input type="text" placeholder="Amount" class="amount amount-input">
+
+        <input type="submit" value="Calculate" onclick="calculateCost();" 
+            class="calculate-button">
+
+        <p class="display-cost"></p>
+
+        <script>
+
+            function calculateCost() {
+                let paragraphElement = document.querySelector('.display-cost');
+                let inputElement = document.querySelector('.amount').value;
+
+                inputElement = Number(inputElement);
+
+                if (isNaN(inputElement) || inputElement < 1) {
+                    paragraphElement.innerHTML = 'Error: Kindly, enter a valid number';
+                    paragraphElement.style.color = 'red';
+                    return;
+                }
+
+                if (inputElement > 499) {
+                    paragraphElement.innerHTML = `Total cost is: ${inputElement}`;
+                    paragraphElement.style.color = 'yellow';
+                } else {
+                    paragraphElement.innerHTML = `Total cost is: ${inputElement + 100}`;
+                    paragraphElement.style.color = 'yellow';
+                }
+            }
+
+
+        </script>
+
+    </body>
+</html>

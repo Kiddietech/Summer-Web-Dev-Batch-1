@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Multimedia</title>
+        <style>
+
+            * {
+                margin: 0;
+                padding: 0;
+            }
+
+            img {
+                margin-bottom: 20px;
+                border: 4px solid teal;
+                border-radius: 20px;
+            }
+
+            video {
+                margin-bottom: 20px;
+            }
+
+            audio {
+                margin-top: 20px;
+            }
+
+            #container {
+                background-color: whitesmoke;
+                padding: 25px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: fit-content;
+            }
+
+            body {
+                background-color: teal;
+                padding: 40px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            h1 {
+                text-align: center;
+                margin-bottom: 10px;
+                color: whitesmoke;
+            }
+
+            #video-buttons {
+                display: flex;
+                flex-direction: row;
+                column-gap: 10px;
+                margin-bottom: 20px; 
+            }
+
+            button {
+                padding: 5px;
+                border: 1px solid whitesmoke;
+                border-radius: 7px;
+                background-color: teal;
+                color: whitesmoke;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body id="body">
+
+        <h1 id="header">Multimedia contents on a webpage</h1>
+
+        <div id="container">
+                
+            <img src="robot-image.jpg" alt="robot" width="200px">
+    
+            <video controls width="500" height="315" id="video">
+                <source src="Here Are The Top 10 Richest People In The World _ March 2024 _ Forbes.mp4" 
+                    type="video/mp4">
+            </video>
+
+            <div id="video-buttons">
+                <button onclick="play_pause()">Play/Pause</button>
+                <button onclick="Maximize_video()">Maximize</button>
+                <button onclick="Minimize_video()">Minimize</button>
+                <button onclick="Normalize_video()">Normalize</button>
+            </div>
+    
+            <iframe width="500" height="315" src="https://www.youtube.com/embed/7tdKE6yThvE?si=eIR_8s8Kx2uyHibe" 
+                allowfullscreen>
+            </iframe>
+    
+            <audio controls>
+                <source src="National-Anthem-Nigeria-National-Anthem-(TrendyBeatz.com).mp3" 
+                    type="audio/mp3">
+            </audio>
+
+        </div>
+
+        <script>
+            //DOM 
+            let myVideo = document.getElementById('video');
+
+            function play_pause() {
+                if (myVideo.paused) {
+                    myVideo.play();
+                } else {
+                    myVideo.pause();
+                }
+            }
+
+            function Maximize_video() {
+                myVideo.width = 750;
+            }
+
+            function Minimize_video() {
+                myVideo.width = 350;
+            }
+
+            function Normalize_video() {
+                myVideo.width = 500;
+            }
+
+        </script>
+    </body> 
+</html>

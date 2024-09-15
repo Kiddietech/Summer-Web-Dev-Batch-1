@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Rock-paper-scissors Game</title>
+        <link rel="stylesheet" href="rock-paper-scissors.css">
+    </head>
+    <body>
+
+        <div class="container">
+            <h1 class="header">Rock Paper Scissors Game</h1>
+            
+            <!-- In this version we styled our project using CSS -->
+
+            <div class="box">
+                <div class="move-container">
+                    <button onclick="playGame('Rock');" class="move-button">
+                        <img src="image/rock-emoji.png" alt="Rock image" class="icon">
+                    </button>
+                    <p>Rock</p>
+                </div>
+     
+                <div class="move-container">
+                    <button onclick="playGame('Paper');" class="move-button">
+                        <img src="image/paper-emoji.png" alt="Paper image" class="icon">
+                    </button>
+                    <p>Paper</p>
+                </div>
+        
+                <div class="move-container">
+                    <button onclick="playGame('Scissors');" class="move-button">
+                        <img src="image/scissors-emoji.png" alt="Scissors immage" class="icon">
+                    </button>
+                    <p>Scissors</p>
+                </div>
+            </div>
+    
+            <p class="display-results result-style"></p>
+    
+            <p class="display-moves moves-style"></p>
+    
+            <p class="display-scores score-style"></p>
+    
+            <button onclick="resetScore();" class="Reset-button">Reset Button</button>
+
+        </div>
+
+        <script src="rock-paper-scissors.js"></script>
+      
+    </body>
+</html>

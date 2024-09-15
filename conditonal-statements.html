@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Conditional Statements</title>
+    </head>
+    <body>
+        <script>
+            // if statement synatx
+
+            /* if (expression) {
+                code to be executed
+                this code can only be executed if the expression is true
+            } */
+
+            /*lets create an application that can 
+            acertain if someone is qualified to vote or not*/
+
+            // comparism expresssion include; <, >, <=, >=, ==, ===
+
+            const defaultAge = 18;
+            let x = 15; // feel free to change the value of x to see different results
+
+            if (x > defaultAge) {
+                console.log('You are qualified to vote');
+            } else if ((defaultAge - x) === 1) {
+                console.log('Try again next year');
+            } else {
+                console.log('You are not qualified to vote');
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Driver license Eligibility</title>
+</head>
+<body>
+    <!-- header element to describe your work -->
+    <h2>Driver Liscene Eligibility Checker</h2>
+
+    <!-- label prompting user to enter age -->
+    <label for="age">Enter Your age:</label>
+
+    <!-- user can enter age in the input field below -->
+    <input type="text" name="age" id="age">
+
+    <!-- user clicks the button to check eligibility status -->
+    <button onclick="CheckEligibity()">CheckEligibity</button>
+<!-- 
+    result of status check is displayed in the paragraph below -->
+    <p id="result"></p>
+
+    <script>
+        //CheckEligiblity() is a function which runs when user clicks on the button
+
+        function CheckEligibity(){
+            // Get the value from the input field
+            const age=parseInt(document.getElementById('age').value);
+            const input = document.getElementById('age');
+
+            // validate the input
+
+            if (isNaN(age) || age < 0) {
+                document.getElementById('result').innerText = 'Please enter a valid age.';
+                return;
+            }
+
+            // check eligibility
+            // if user age is above 18 runs the code in line 40
+            // if user is below 18 runs the code in line 42
+
+            if(age >= 18){
+                document.getElementById('result').innerText ='You are eligible to get a driver\'s license.';
+            } else {
+                document.getElementById('result').innerText ='wait till your eligible to get a driver\'s license.';   
+            }
+        }
+    </script>
+</body>
+</html>                                                        
+  

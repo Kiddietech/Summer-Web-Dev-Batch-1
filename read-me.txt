@@ -1,0 +1,16 @@
+explain different operators 
+Varaibles --> change the string to a varaible
+how to assign vairables const var and let
+explain different data types.
+
+Math.random is a function that generates random numbers.
+Math.random generates numbers >= 0 but less that 1. 0>=x<1
+Math.round is a function that rounds up decimals to nearest whole number
+
+
+if statement--> display on console first before saving to varaible.
+How does can we input two values --> logical operators && and ||  and !
+console.log(true && true) -- true
+console.log(true || false) -- true
+console.log(!true) -- false
+

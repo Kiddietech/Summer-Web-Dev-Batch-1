@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>exercise-2</title>
+        <style>
+            body {
+                color: yellow;
+                font-family: monospace;
+                background-color: teal;
+            }
+            
+            li {
+                margin-bottom: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>
+            Try the following exercises to perfect your knowledge
+        </h2>
+
+        <ol>
+            <li>
+                Create a function 'convertToFahrenheit(celsius)' <br>
+                that takes a number in degrees Celsius and returns a number in degrees Fahrenheit. <br>
+                Formula: Fahrenheit = (Celsius * 9/5) + 32 <br>
+                convertToFahrenheit(25) => 77
+            </li>
+
+            <li>
+                Create a function 'convertToCelsius(fahrenheit)' <br>
+                that takes a number in degrees Fahrenheit and returns a number in degrees Celsius. <br>
+                Formula: Celsius = (Fahrenheit-32)*5/9 <br>
+                convertToCelsius(86) => 30.
+            </li>
+
+            <li>
+                Create a function 'convertTemperature(degrees, unit)' <br> 
+                that takes a number and a unit ('C' or 'F'), and converts it into the other unit. <br>
+                convertTemperature(25, 'C') => '77F' <br>
+                convertTemperature(86, 'F') => '30C'
+            </li>
+        </ol>
+
+        <script>
+            function convertToFahrenheit(celsius) {
+                let fahrenheit = ((celsius * (9/5)) + 32);
+                return `${celsius}\u00B0C is converted to ${fahrenheit}\u00B0F`;
+            }
+
+            console.log(convertToFahrenheit(0));
+
+            function convertToCelsius(fahrenheit) {
+                let celsius = ((fahrenheit - 32)  * 5/9);
+                return `${fahrenheit}\u00B0F is converted to ${celsius}\u00B0C`;
+            }
+
+            console.log(convertToCelsius(32));
+
+            function convertTemperature(degrees, unit) {
+
+                if (unit === 'C') {
+                    console.log(convertToFahrenheit(degrees));
+                }
+
+                if (unit === 'F') {
+                    console.log(convertToCelsius(degrees));
+                }
+
+            }
+
+            convertTemperature(100, 'C');
+            convertTemperature(212, 'F');
+
+        </script>
+    </body>
+</html>

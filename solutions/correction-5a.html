@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>exercise-2</title>
+    </head>
+    <body>
+        <h2>
+            Try the following exercises to perfect your knowledge
+        </h2>
+
+        <p>
+            Create a function 'convertToFahrenheit(celsius)' <br>
+            that takes a number in degrees Celsius and returns a number in degrees Fahrenheit. <br>
+            Formula: Fahrenheit = (Celsius * 9/5) + 32 <br> 
+            convertToFahrenheit(25) => 77
+        </p>
+
+        <script>
+
+            function convertToFahrenheit(celsius) {
+                let fahrenheit = ((celsius * (9/5)) + 32);
+                return `${celsius}\u00B0C is converted to ${fahrenheit}\u00B0F`;
+            }
+
+            console.log(convertToFahrenheit(25));
+
+        </script>
+    </body>
+</html>

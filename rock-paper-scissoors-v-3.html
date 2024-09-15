@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Rock-paper-scissors Game</title>
+        <style>
+            button {
+                background-color: rgb(55, 2, 244);
+                color: white;
+                padding-top: 10px;
+                padding-left: 10px;
+                padding-bottom: 10px;
+                padding-right: 10px;
+                border-width: 2px;
+                border-color: rgb(13, 255, 0);
+                border-style: solid;
+                border-radius: 20px;
+                cursor: pointer;
+            }
+
+            p {
+                font-size: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <p>Rock Paper Scissors</p>
+        
+        <!-- the buttons when clicked displays the move picked by the player and computer in the browser console -->
+        <!-- in this version all the buttons are activated -->
+        <!-- In this version we added variables to our code -->
+        <!-- in this version we added conditional statements to code -->
+        <!-- in this version we compared our move with the computerMove and display result both on the console and in a popup -->
+
+        <button onclick="
+            let randomNumber = Math.round(Math.random()*10);
+            let computerMove = '';
+
+            /* inside the variable randomNumber; 
+            numbers between 0 and 10 are generated and
+            stored when we click on the button. */
+
+            // to combine two expressions we make use of logical operators
+
+            if (randomNumber >= 0 && randomNumber < 4) {
+                computerMove = 'Rock';
+            } else if (randomNumber >= 4 && randomNumber < 7) {
+                computerMove = 'Paper';
+            } else if (randomNumber >= 7 && randomNumber < 11) {
+                computerMove = 'Scissors';
+            }
+
+            let result = '';
+
+            if ('Rock' === computerMove) {
+                result = 'its a tie'
+            } else if ('Paper' === computerMove) {
+                result = 'You lose!'
+            } else if ('Scissors' === computerMove) {
+                result = 'You win!'
+            }
+
+            console.log(`You picked Rock; Computer picked ${computerMove}; ${result}`);
+            alert(`You picked Rock; Computer picked ${computerMove}; ${result}`);
+        ">Rock</button>
+
+        <button onclick="
+            let randomNumber = Math.round(Math.random()*10);
+            let computerMove = '';
+
+            /* inside the variable randomNumber; 
+            numbers between 0 and 10 are generated and
+            stored when we click on the button. */
+
+            // to combine two expressions we make use of logical operators
+
+            if (randomNumber >= 0 && randomNumber < 4) {
+                computerMove = 'Rock';
+            } else if (randomNumber >= 4 && randomNumber < 7) {
+                computerMove = 'Paper';
+            } else if (randomNumber >= 7 && randomNumber < 11) {
+                computerMove = 'Scissors';
+            }
+
+            let result = '';
+
+            if ('Rock' === computerMove) {
+                result = 'You win!'
+            } else if ('Paper' === computerMove) {
+                result = 'its a tie'
+            } else if ('Scissors' === computerMove) {
+                result = 'You lose!'
+            }
+
+            console.log(`You picked Paper; Computer picked ${computerMove}; ${result}`);
+            alert(`You picked Paper; Computer picked ${computerMove}; ${result}`);
+        ">Paper</button>
+
+        <button onclick="
+            let randomNumber = Math.round(Math.random()*10);
+            let computerMove = '';
+
+            /* inside the variable randomNumber; 
+            numbers between 0 and 10 are generated and
+            stored when we click on the button. */
+
+            // to combine two expressions we make use of logical operators
+
+            if (randomNumber >= 0 && randomNumber < 4) {
+                computerMove = 'Rock';
+            } else if (randomNumber >= 4 && randomNumber < 7) {
+                computerMove = 'Paper';
+            } else if (randomNumber >= 7 && randomNumber < 11) {
+                computerMove = 'Scissors';
+            }
+
+            let result = '';
+
+            if ('Rock' === computerMove) {
+                result = 'You lose!'
+            } else if ('Paper' === computerMove) {
+                result = 'You win!'
+            } else if ('Scissors' === computerMove) {
+                result = 'its a tie'
+            }
+
+            console.log(`You picked Scissors; Computer picked ${computerMove}; ${result}`);
+            alert(`You picked Scissors; Computer picked ${computerMove}; ${result}`);
+        ">Scissors</button>
+      
+    </body>
+</html>

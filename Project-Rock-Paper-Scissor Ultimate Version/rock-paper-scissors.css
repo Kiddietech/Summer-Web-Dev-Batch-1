@@ -1,0 +1,56 @@
+body {
+    background-color: rgb(245, 198, 205);
+    color: white;
+}
+
+.container {
+    background-color: #550404;
+    width: fit-content;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.6);
+}
+
+.icon {
+    height: 45px;
+}
+
+.move-button {
+    background-color: transparent;
+    border: 2px solid white;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.move-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+}
+
+.result-style {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.Reset-button {
+    font-size: 18px;
+    border: none;
+    padding: 6px;
+    background-color: rgb(221, 188, 3);
+    cursor: pointer;
+}
+
+.moves-style {
+    margin-top: 10px;
+    margin-bottom: 50px;
+}

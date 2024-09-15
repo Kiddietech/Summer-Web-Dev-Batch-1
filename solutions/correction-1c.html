@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>exercise-1c</title>
+    </head>
+    <body>
+
+        <p>
+            Continuing from (1a), create a variable called 'name' and save your name inside
+            (as a string). <br> Update the if-statement to display your name in each message. <br>
+            For example: 'Good morning $(name)!'
+        </p>
+
+
+        <script>
+
+            let hour = 5;
+
+            let name = 'Your Name';
+
+            if (hour >= 6 && hour < 13) {
+                console.log(`Good morning! ${name}`);
+            } else if (hour >= 13 && hour < 18) {
+                console.log(`Good afternoon! ${name}`);
+            } else {
+                console.log(`Good night! ${name}`);
+            }
+
+        </script>
+        
+    </body>
+</html>
